@@ -1,1 +1,8 @@
-BOT_TOKEN = "23f23"
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+BOT_TOKEN = str(os.getenv("BOT_TOKEN"))
+admins = str(os.getenv("admins"))
